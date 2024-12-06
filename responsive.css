@@ -337,7 +337,6 @@ display: none;
   
     flex-direction: column;
     overflow: hidden;
-  
     border-bottom-left-radius: 200px;
     border-bottom-right-radius: 200px;
  
@@ -594,7 +593,7 @@ display: none;
 
 /* news letter */
 .newsletter{
-    border: 4px solid ;
+    /* border: 4px solid ; */
     width:100%;
     height:180vh;
     /* margin: 50px 0px; */
@@ -631,3 +630,1346 @@ display: none;
     border-radius: 50px;
 }
 }
+/* footer */
+@media (max-width:500px){
+    .footer >.copyright{
+        font-size: 11px;
+    }
+}
+/* -------------------------------------------------------------------------- */
+/* 651px to 800px  */
+@media (min-width:651px) and (max-width:800px){
+    nav >.menu{
+    display: block;
+    /* background-color: aliceblue; */
+    display: flex;
+    width:70%;
+    justify-content: center;
+    align-items: center;
+    }
+    .hamburgermenu{
+        display: none;
+    }
+    /* navbar */
+    /* hero-section */
+.hero-section{
+    background-image: url(banner-bg.jpg);
+    width: 100%;
+    height: 200vh;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    /* gap: 50px; */
+    align-items: center;
+  
+    flex-direction: column;
+    overflow: hidden;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+ 
+}
+.hero-section >.leftcard{
+/* background-color: pink; */
+width: 110%;
+height: 70vh;
+color: white;
+    padding-right: 70px;
+text-align: center;
+position: relative;
+}
+.hero-section >.leftcard >h2{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.hero-section >.leftcard > h1{
+    font-size: 50px;
+    /* margin: 50px 0px; */
+    font-family: "Poppins", sans-serif;
+}
+.hero-section >.leftcard > p{
+    font-size: 15px;
+    margin: 30px 0px;
+    font-family: "Poppins", sans-serif;
+}
+.hero-section >.leftcard img{
+    position: absolute;
+    top: 17%;
+    left: 30%;
+}
+.searchbar{
+    /* border: none; */
+   position: relative;
+   left: 50px;
+   top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 25px;
+    width:90%;
+    height:50px;
+ 
+}
+.searchbar>input{
+    border:none;
+    width:50%;
+    outline: none;
+    /* background-color: aquamarine; */
+    margin-left: 25px;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.leftcard >.searchbar >.hero-search{
+    width: 37%;
+    height:100%;
+    padding:10px;
+    font-size: 20px;
+    background-color: #ee626b;
+    color:white;
+    border-radius: 25px;
+    border: none;
+}
+.hero-section >.rightcard {
+    /* background-color: aqua; */
+    position: relative;
+}
+.hero-section >.rightcard h1{
+    background-color: #008af8;
+    width:70px;
+    border-radius: 25px;
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:20px;
+    left:320px;
+}
+.hero-section >.rightcard img{
+    border-radius: 35px;
+}
+.hero-section >.rightcard h2{
+    position: absolute;
+    bottom:-20px;
+    background-color: #ee626b;
+    left: -30px;
+    width:90px;
+    height: 100px;
+    border-radius:50% ;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 35px;
+}
+/* hero section */
+/* herocards */
+.herocards{
+    /* border: 2px solid black; ; */
+    /* background-color: pink; */
+    width: 100%;
+    height: 70vh;
+    align-items: center; 
+    display: grid;
+    grid-template-columns: repeat(2,380px);
+    grid-template-rows: repeat(2,240px);
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 20px;
+margin: 0;
+}
+/* hero cards */
+/* trending cards */
+.trendingames{
+    /* border: 5px solid red; */
+    width: 100%;
+    height:120vh;
+    border-radius: 150px;
+    /* background-color:#f7f7f7; */
+    /* background-color: aqua; */
+}
+.trendingames > .trendingamestitle{
+    /* background-color: red; */
+    width: 100%;
+    line-height: 40px;
+    padding: 55px 40px;
+}
+.trendingames > .trendingamestitle > .trendingtitlebutton button{
+ display: none;
+}
+.trendingames > .trendingcards{
+    /* background-color:pink; */
+    width: 100%;
+    height: 80%;
+    /* border-radius: 125px; */
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(2,300px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+/* trending cards */
+/* topgames */
+.topgames{
+    width:100%;
+    height: 200vh;
+/* background-color: aqua; */
+    border-radius: 100px;
+    /* background-color: #f7f7f7; */
+}
+.topgames >.topgamesheader{
+    /* background-color: #f7f7f7; */
+    padding: 40px 60px 0px 60px;
+    width: 100%;
+    line-height: 40px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin-bottom: 50px;
+  } 
+.topgames >.topgamesheader >.topgamesbutton >.topgamebutton{
+display: none;
+}
+.topgames >.topgamescards{
+    /* background-color: #f7f7f7; */
+    /* background-color: cornflowerblue; */
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,360px);
+    grid-template-rows: repeat(3,320px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+    /* background-color: coral; */
+}
+.topgames >.topgamescards >.games-card img{
+    width: 100%;
+    height: 75%;
+    border-radius: 25px;
+}
+.topgames >.topgamescards >.games-card >.gamesbutton{
+    padding: 10px 25px ;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    background-color: #ee626b;
+    position: absolute;
+    bottom:-9%;
+    left: 37%;
+}
+/* topgames */
+/* actions */
+.actions{
+    width:100%;
+    height: 210vh;
+    margin-top: 70px;
+    /* border: 3px solid green; */
+/* background-color: lime; */
+}
+.actions >.actionheader{
+    width: 100%;
+    height: 130px;
+    /* border:2px solid #008af8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.actions >.actionheader h1{
+    font-size: 35px;
+}
+.actions >.actionheader h3{
+    font-size: 17px;
+    color: #ee626b;
+}
+.actions >.actioncards{
+    width:100%;
+    height: 90%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(3,250px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding:0px;
+
+}
+.actions >.actioncards >.actioncard{
+    width:100%;
+    height:100%;
+    /* border: 2px solid black; */
+    background-color:#008af8 ;
+    border-radius: 25px;
+}
+
+.actions >.actioncards >.actioncard >.acard img{
+    width:100%;
+    height: 350px;
+    border-radius: 25px;
+  /* display: none; */
+}
+.actions >.actioncards >.actioncard >.acard h1{
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 25px;
+}
+/* actions */
+/* news letter */
+.newsletter{
+    /* border: 4px solid ; */
+    width:100%;
+    height:120vh;
+    /* margin: 50px 0px; */
+   position: relative;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.newsletter > .midcard{
+    display: none;
+}
+.newsletter .lettercards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    /* background-color: pink; */
+    gap: 40px;
+    height: 95%;
+    width: 95%;
+}
+.newsletter .lettercards .leftcard{
+    background-color:rgb(247, 247, 247);
+    height: 50%;
+    width: 100%;
+    border-radius: 50px;
+}
+.newsletter .lettercards .rightcard{
+    background-color:rgb(247, 247, 247);
+    height: 50%;
+    width: 100%;
+    border-radius: 50px;
+}
+.footer >.copyright{
+    font-size: 11px;
+}
+}
+/* 651px to 800px */
+/* ------------------------------------------------ */
+/* 801px to 950px */
+/* navbar */
+@media (min-width:801px) and (max-width:950px) {
+    nav >.menu{
+     /* background-color: aquamarine; */
+     display: block;
+    /* background-color: aliceblue; */
+    display: flex;
+    width:67%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    }
+    .hamburgermenu{
+        display: none;
+    }
+    /* navbar */
+    .hero-section{
+        background-image: url(banner-bg.jpg);
+        width: 100%;
+        height: 180vh;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        /* gap: 50px; */
+        align-items: center;
+      
+        flex-direction: column;
+        overflow: hidden;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+     
+    }
+    .hero-section >.leftcard{
+    /* background-color: pink; */
+    width: 112%;
+    height: 70vh;
+    color: white;
+        padding-right: 70px;
+    text-align: center;
+    position: relative;
+    }
+    .hero-section >.leftcard >h2{
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+    }
+    .hero-section >.leftcard > h1{
+        font-size: 50px;
+        /* margin: 50px 0px; */
+        font-family: "Poppins", sans-serif;
+    }
+    .hero-section >.leftcard > p{
+        font-size: 15px;
+        margin: 30px 0px;
+        font-family: "Poppins", sans-serif;
+    }
+    .hero-section >.leftcard img{
+        position: absolute;
+        top: 17%;
+        left: 30%;
+    }
+    .searchbar{
+        /* border: none; */
+       position: relative;
+       left: 50px;
+       top: 20px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        width:90%;
+        height:50px;
+     
+    }
+    .searchbar>input{
+        border:none;
+        width:50%;
+        outline: none;
+        /* background-color: aquamarine; */
+        margin-left: 25px;
+        font-family: sans-serif;
+        font-size: 15px;
+        
+    }
+    .leftcard >.searchbar >.hero-search{
+        width: 37%;
+        height:100%;
+        padding:10px;
+        font-size: 20px;
+        background-color: #ee626b;
+        color:white;
+        border-radius: 25px;
+        border: none;
+    }
+    .hero-section >.rightcard {
+        /* background-color: aqua; */
+        position: relative;
+    }
+    .hero-section >.rightcard h1{
+        background-color: #008af8;
+        width:80px;
+        border-radius: 25px;
+        padding: 5px 10px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top:20px;
+        left:320px;
+    }
+    .hero-section >.rightcard img{
+        border-radius: 35px;
+    }
+    .hero-section >.rightcard h2{
+        position: absolute;
+        bottom:-20px;
+        background-color: #ee626b;
+        left: -30px;
+        width:90px;
+        height: 100px;
+        border-radius:50% ;
+       text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: white;
+       font-size: 35px;
+    }
+    /* hero section */
+    /* herocards */
+.herocards{
+    /* border: 2px solid black; ; */
+    /* background-color: pink; */
+    width: 100%;
+    height: 70vh;
+    align-items: center; 
+    display: grid;
+    grid-template-columns: repeat(2,380px);
+    grid-template-rows: repeat(2,240px);
+    justify-content: space-evenly;
+    align-content: space-between;
+    gap: 10px;
+margin: 0;
+}
+/* hero cards */
+/* trending cards */
+.trendingames{
+    /* border: 5px solid red; */
+    width: 100%;
+    height:120vh;
+    border-radius: 150px;
+    /* background-color:#f7f7f7; */
+    /* background-color: aqua; */
+}
+.trendingames > .trendingamestitle{
+    /* background-color: red; */
+    width: 100%;
+    line-height: 40px;
+padding: 55px 40px;
+}
+.trendingames > .trendingamestitle > .trendingtitlebutton button{
+ display: none;
+}
+.trendingames > .trendingcards{
+    /* background-color:pink; */
+    width: 100%;
+    height: 80%;
+    /* border-radius: 125px; */
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(2,300px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+/* trending cards */
+/* topgames */
+.topgames{
+    width:100%;
+    height: 200vh;
+/* background-color: aqua; */
+    border-radius: 100px;
+    /* background-color: #f7f7f7; */
+}
+.topgames >.topgamesheader{
+    /* background-color: #f7f7f7; */
+    padding: 40px 60px 0px 60px;
+    width: 100%;
+    line-height: 40px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin-bottom: 50px;
+  } 
+.topgames >.topgamesheader >.topgamesbutton >.topgamebutton{
+display: none;
+}
+.topgames >.topgamescards{
+    /* background-color: #f7f7f7; */
+    /* background-color: cornflowerblue; */
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,360px);
+    grid-template-rows: repeat(3,320px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+    /* background-color: coral; */
+}
+.topgames >.topgamescards >.games-card img{
+    width: 100%;
+    height: 75%;
+    border-radius: 25px;
+}
+.topgames >.topgamescards >.games-card >.gamesbutton{
+    padding: 10px 25px ;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    background-color: #ee626b;
+    position: absolute;
+    bottom:-9%;
+    left: 37%;
+}
+/* topgames */
+/* actions */
+.actions{
+    width:100%;
+    height: 210vh;
+    margin-top: 70px;
+    /* border: 3px solid green; */
+/* background-color: lime; */
+}
+.actions >.actionheader{
+    width: 100%;
+    height: 130px;
+    /* border:2px solid #008af8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.actions >.actionheader h1{
+    font-size: 35px;
+}
+.actions >.actionheader h3{
+    font-size: 17px;
+    color: #ee626b;
+}
+.actions >.actioncards{
+    width:100%;
+    height: 90%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(3,250px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding:0px;
+
+}
+.actions >.actioncards >.actioncard{
+    width:100%;
+    height:100%;
+    /* border: 2px solid black; */
+    background-color:#008af8 ;
+    border-radius: 25px;
+}
+
+.actions >.actioncards >.actioncard >.acard img{
+    width:100%;
+    height: 350px;
+    border-radius: 25px;
+  /* display: none; */
+}
+.actions >.actioncards >.actioncard >.acard h1{
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 25px;
+}
+/* actions */
+/* news letter */
+.newsletter{
+    /* border: 4px solid ; */
+    width:100%;
+    height:120vh;
+    /* margin: 50px 0px; */
+   position: relative;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.newsletter > .midcard{
+    display: none;
+}
+.newsletter .lettercards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    /* background-color: pink; */
+    gap: 40px;
+    height: 95%;
+    width: 95%;
+}
+.newsletter .lettercards .leftcard{
+    background-color:rgb(247, 247, 247);
+    height: 50%;
+    width: 100%;
+    border-radius: 50px;
+}
+.newsletter .lettercards .rightcard{
+    background-color:rgb(247, 247, 247);
+    height: 50%;
+    width: 100%;
+    border-radius: 50px;
+}
+.footer >.copyright{
+    font-size: 15px;
+   }
+}
+/* --------------------------------------------------------------------- */
+/* 951px to 1100px  */
+/* navbar */
+@media (min-width:951px) and (max-width:1100px) {
+    nav >.menu{
+     /* background-color: aquamarine; */
+     display: block;
+    /* background-color: aliceblue; */
+    display: flex;
+    width:68%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    }
+    .hamburgermenu{
+        display: none;
+    }
+    .hero-section{
+        background-image: url(banner-bg.jpg);
+        width: 100%;
+        height: 180vh;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        /* gap: 50px; */
+        align-items: center;
+      
+        flex-direction: column;
+        overflow: hidden;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+     
+    }
+    .hero-section >.leftcard{
+    /* background-color: pink; */
+    width: 112%;
+    height: 70vh;
+    color: white;
+        padding-right: 70px;
+    text-align: center;
+    position: relative;
+    }
+    .hero-section >.leftcard >h2{
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+    }
+    .hero-section >.leftcard > h1{
+        font-size: 50px;
+        /* margin: 50px 0px; */
+        font-family: "Poppins", sans-serif;
+    }
+    .hero-section >.leftcard > p{
+        font-size: 15px;
+        margin: 30px 0px;
+        font-family: "Poppins", sans-serif;
+    }
+    .hero-section >.leftcard img{
+        position: absolute;
+        top: 17%;
+        left: 30%;
+    }
+    .searchbar{
+        /* border: none; */
+       position: relative;
+       left: 50px;
+       top: 20px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        width:90%;
+        height:50px;
+     
+    }
+    .searchbar>input{
+        border:none;
+        width:50%;
+        outline: none;
+        /* background-color: aquamarine; */
+        margin-left: 25px;
+        font-family: sans-serif;
+        font-size: 15px;
+        
+    }
+    .leftcard >.searchbar >.hero-search{
+        width: 37%;
+        height:100%;
+        padding:10px;
+        font-size: 20px;
+        background-color: #ee626b;
+        color:white;
+        border-radius: 25px;
+        border: none;
+    }
+    .hero-section >.rightcard {
+        /* background-color: aqua; */
+        position: relative;
+    }
+    .hero-section >.rightcard h1{
+        background-color: #008af8;
+        width:80px;
+        border-radius: 25px;
+        padding: 5px 10px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top:20px;
+        left:320px;
+    }
+    .hero-section >.rightcard img{
+        border-radius: 35px;
+    }
+    .hero-section >.rightcard h2{
+        position: absolute;
+        bottom:-20px;
+        background-color: #ee626b;
+        left: -30px;
+        width:90px;
+        height: 100px;
+        border-radius:50% ;
+       text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: white;
+       font-size: 35px;
+    }
+    /* hero section */
+          /* herocards */
+.herocards{
+    /* border: 2px solid black; ; */
+    /* background-color: pink; */
+    width: 100%;
+    height: 70vh;
+    align-items: center; 
+    display: grid;
+    grid-template-columns: repeat(2,380px);
+    grid-template-rows: repeat(2,240px);
+    justify-content: space-evenly;
+    align-content: space-between;
+    gap: 10px;
+margin: 0;
+}
+/* hero cards */
+/* trending cards */
+.trendingames{
+    /* border: 5px solid red; */
+    width: 100%;
+    height:120vh;
+    border-radius: 150px;
+    /* background-color:#f7f7f7; */
+    /* background-color: aqua; */
+}
+.trendingames > .trendingamestitle{
+    /* background-color: red; */
+    width: 100%;
+    line-height: 40px;
+padding: 55px 40px;
+}
+.trendingames > .trendingamestitle > .trendingtitlebutton button{
+ display: none;
+}
+.trendingames > .trendingcards{
+    /* background-color:pink; */
+    width: 100%;
+    height: 80%;
+    /* border-radius: 125px; */
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(2,300px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+/* trending cards */
+/* topgames */
+.topgames{
+    width:100%;
+    height: 200vh;
+/* background-color: aqua; */
+    border-radius: 100px;
+    /* background-color: #f7f7f7; */
+}
+.topgames >.topgamesheader{
+    /* background-color: #f7f7f7; */
+    padding: 40px 60px 0px 60px;
+    width: 100%;
+    line-height: 40px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin-bottom: 50px;
+  } 
+.topgames >.topgamesheader >.topgamesbutton >.topgamebutton{
+display: none;
+}
+.topgames >.topgamescards{
+    /* background-color: #f7f7f7; */
+    /* background-color: cornflowerblue; */
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,360px);
+    grid-template-rows: repeat(3,320px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+    /* background-color: coral; */
+}
+.topgames >.topgamescards >.games-card img{
+    width: 100%;
+    height: 75%;
+    border-radius: 25px;
+}
+.topgames >.topgamescards >.games-card >.gamesbutton{
+    padding: 10px 25px ;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    background-color: #ee626b;
+    position: absolute;
+    bottom:-9%;
+    left: 37%;
+}
+/* topgames */
+/* actions */
+.actions{
+    width:100%;
+    height: 210vh;
+    margin-top: 70px;
+    /* border: 3px solid green; */
+/* background-color: lime; */
+}
+.actions >.actionheader{
+    width: 100%;
+    height: 130px;
+    /* border:2px solid #008af8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.actions >.actionheader h1{
+    font-size: 35px;
+}
+.actions >.actionheader h3{
+    font-size: 17px;
+    color: #ee626b;
+}
+.actions >.actioncards{
+    width:100%;
+    height: 90%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(3,250px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding:0px;
+
+}
+.actions >.actioncards >.actioncard{
+    width:100%;
+    height:100%;
+    /* border: 2px solid black; */
+    background-color:#008af8 ;
+    border-radius: 25px;
+}
+
+.actions >.actioncards >.actioncard >.acard img{
+    width:100%;
+    height: 350px;
+    border-radius: 25px;
+  /* display: none; */
+}
+.actions >.actioncards >.actioncard >.acard h1{
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 25px;
+}
+/* actions */
+/* news letter */
+.newsletter{
+    /* border: 4px solid ; */
+    width:100%;
+    height:120vh;
+    /* margin: 50px 0px; */
+   position: relative;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.newsletter > .midcard{
+    display: none;
+}
+.newsletter .lettercards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    /* background-color: pink; */
+    gap: 40px;
+    height: 95%;
+    width: 95%;
+}
+.newsletter .lettercards .leftcard{
+    background-color:rgb(247, 247, 247);
+    height: 50%;
+    width: 100%;
+    border-radius: 50px;
+}
+.newsletter .lettercards .rightcard{
+    background-color:rgb(247, 247, 247);
+    height: 50%;
+    width: 100%;
+    border-radius: 50px;
+}
+.footer >.copyright{
+    font-size: 19px;
+   }
+}
+/* ------------------------------------------------------------------- */
+/* 951px to 1100px */
+/* -------------------------------------------------------------------- */
+/* 1101px to 1250 */
+/* navbar */
+@media (min-width:1101px) and (max-width:1250px) {
+    nav >.menu{
+     /* background-color: aquamarine; */
+     display: block;
+    /* background-color: aliceblue; */
+    display: flex;
+    width:68%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    }
+    .hamburgermenu{
+        display: none;
+    }
+    .hero-section{
+        background-image: url(banner-bg.jpg);
+        width: 100%;
+        height: 120vh;
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-evenly;
+        /* gap: 50px; */
+        align-items: center;
+        /* flex-direction: column; */
+        overflow: hidden;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+     
+    }
+    .hero-section >.leftcard{
+    /* background-color: pink; */
+    width: 112%;
+    height: 70vh;
+    color: white;
+        padding-right: 70px;
+    text-align: center;
+    position: relative;
+    }
+    .hero-section >.leftcard >h2{
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+    }
+    .hero-section >.leftcard > h1{
+        font-size: 50px;
+        /* margin: 50px 0px; */
+        font-family: "Poppins", sans-serif;
+    }
+    .hero-section >.leftcard > p{
+        font-size: 15px;
+        margin: 30px 0px;
+        font-family: "Poppins", sans-serif;
+    }
+    .hero-section >.leftcard img{
+        position: absolute;
+        top: 17%;
+        left: 30%;
+    }
+    .searchbar{
+        /* border: none; */
+       position: relative;
+       left: 50px;
+       top: 20px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        width:90%;
+        height:50px;
+     
+    }
+    .searchbar>input{
+        border:none;
+        width:50%;
+        outline: none;
+        /* background-color: aquamarine; */
+        margin-left: 25px;
+        font-family: sans-serif;
+        font-size: 15px;
+        
+    }
+    .leftcard >.searchbar >.hero-search{
+        width: 37%;
+        height:100%;
+        padding:10px;
+        font-size: 20px;
+        background-color: #ee626b;
+        color:white;
+        border-radius: 25px;
+        border: none;
+    }
+    .hero-section >.rightcard {
+        /* background-color: aqua; */
+        position: relative;
+    }
+    .hero-section >.rightcard h1{
+        background-color: #008af8;
+        width:80px;
+        border-radius: 25px;
+        padding: 5px 10px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top:20px;
+        left:320px;
+    }
+    .hero-section >.rightcard img{
+        border-radius: 35px;
+    }
+    .hero-section >.rightcard h2{
+        position: absolute;
+        bottom:-20px;
+        background-color: #ee626b;
+        left: -30px;
+        width:90px;
+        height: 100px;
+        border-radius:50% ;
+       text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: white;
+       font-size: 35px;
+    }
+    /* hero section */
+          /* herocards */
+.herocards{
+    /* border: 2px solid black; ; */
+    /* background-color: pink; */
+    width: 100%;
+    height: 35vh;
+    align-items: center; 
+    display: grid;
+    grid-template-columns: repeat(4,260px);
+    grid-template-rows: repeat(1,190px);
+    justify-content: space-evenly;
+    align-content: space-between;
+    overflow: hidden;
+    gap: 10px;
+    margin: 0;
+}
+/* hero cards */
+/* trending cards */
+.trendingames{
+    /* border: 5px solid red; */
+    width: 100%;
+    height:70vh;
+    border-radius: 150px;
+    overflow: hidden;
+    /* background-color:#f7f7f7; */
+    /* background-color: aqua; */
+}
+.trendingames > .trendingamestitle{
+    /* background-color: red; */
+    width: 100%;
+    line-height: 40px;
+   padding: 10px 40px;
+}
+.trendingames > .trendingamestitle > .trendingtitlebutton button{
+ display: none;
+}
+.trendingames > .trendingcards{
+    /* background-color:pink; */
+    width: 100%;
+    height: 80%;
+    /* border-radius: 125px; */
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(1,240px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    /* overflow: hidden; */
+    /* gap: 20px; */
+}
+/* trending cards */
+/* topgames */
+.topgames{
+    width:100%;
+    height: 90vh;
+/* background-color: aqua; */
+    border-radius: 100px;
+    /* background-color: #f7f7f7; */
+}
+.topgames >.topgamesheader{
+    /* background-color: #f7f7f7; */
+    padding: 10px 10px 0px 60px;
+    width: 100%;
+    line-height: 30px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin-bottom: 10px;
+  } 
+.topgames >.topgamesheader >.topgamesbutton >.topgamebutton{
+display: none;
+}
+.topgames >.topgamescards{
+    /* background-color: #f7f7f7; */
+    /* background-color: cornflowerblue; */
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(6,170px);
+    grid-template-rows: repeat(1,200px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+    /* background-color: coral; */
+}
+.topgames >.topgamescards >.games-card img{
+    width: 100%;
+    height: 65%;
+    border-radius: 25px;
+}
+.topgames >.topgamescards >.games-card >.gamesbutton{
+    padding: 0px 10px ;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    background-color: #ee626b;
+    position: absolute;
+    bottom:-15%;
+    left: 20%;
+}
+.topgames >.topgamescards >.games-card >.gamestxt{
+    /* border: 2px solid red; */
+    width:100%;
+    height: 35%;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    font-size: 12px;
+}
+/* topgames */
+/* actions */
+.actions{
+    width:100%;
+    height: 100vh;
+    /* margin-top: 10px; */
+    /* border: 3px solid green; */
+/* background-color: lime; */
+}
+.actions >.actionheader{
+    width: 100%;
+    height: 100px;
+    /* border:2px solid #008af8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.actions >.actionheader h1{
+    font-size: 35px;
+}
+.actions >.actionheader h3{
+    font-size: 17px;
+    color: #ee626b;
+}
+.actions >.actioncards{
+    width:100%;
+    height: 90%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(5,200px);
+    grid-template-rows: repeat(1,100px);
+    justify-content: space-between;
+    align-content: space-evenly;
+    padding:10px;
+
+}
+.actions >.actioncards >.actioncard{
+    width:100%;
+    height:100%;
+    /* border: 2px solid black; */
+    background-color:#008af8 ;
+    border-radius: 25px;
+}
+
+.actions >.actioncards >.actioncard >.acard img{
+    width:100%;
+    height: 200px;
+    border-radius: 25px;
+  /* display: none; */
+}
+.actions >.actioncards >.actioncard >.acard h1{
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 25px;
+}
+/* actions */
+/* news letter */
+.newsletter{
+    /* border: 4px solid ; */
+    width:100%;
+    height:120vh;
+    /* margin: 50px 0px; */
+   position: relative;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.newsletter > .midcard{
+    display: none;
+}
+.newsletter .lettercards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    /* background-color: pink; */
+    gap: 40px;
+    height: 95%;
+    width: 95%;
+}
+.newsletter .lettercards .leftcard{
+    background-color:rgb(247, 247, 247);
+    height: 45%;
+    width: 100%;
+    border-radius: 50px;
+    text-align: center;
+}
+.newsletter .lettercards .rightcard{
+    background-color:rgb(247, 247, 247);
+    height: 45%;
+    width: 100%;
+    border-radius: 50px;
+    text-align: center;
+}
+.newsletter > .lettercards .rightcard .searchbar2{
+    background-color: white;
+    border-radius: 25px;
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.newsletter > .lettercards .rightcard .searchbar2 input{
+    /* margin: 10px; */
+    width:30%;
+    outline: none;
+    border: none;
+}
+.newsletter > .lettercards .rightcard .searchbar2 button{
+    width:180px;
+    height: 50px;
+    background-color: #ee626b;
+    border-radius: 25px;
+    color: white;
+    border: none;
+}
+.footer >.copyright{
+    font-size: 20px;
+   }
+}
+/* 1101px to 1250 */

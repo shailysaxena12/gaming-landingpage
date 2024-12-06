@@ -1,7 +1,8 @@
 *{
     margin: 0;
-    padding: 0;
+    /* padding: 5px; */
     box-sizing: border-box;
+    
 }
 nav{
     background-image: url(banner-bg.jpg);
@@ -33,7 +34,7 @@ nav >.menu >.signin{
     border: none;
 }
 nav > .menu > h3:hover{
-    border :2px solid orange;
+    /* border :2px solid orange; */
     border-radius: 25px;
     background-color:#ffffff1A;
     
@@ -313,7 +314,7 @@ margin-bottom: 20px;
 /* topgames */
 .topgames{
     width:100%;
-    height: 90vh;
+    height: 100vh;
     /* border: 5px solid; */
     border-radius: 100px;
     background-color: #f7f7f7;
@@ -346,46 +347,53 @@ margin-bottom: 20px;
     border: none;
     color: white;
 }
-.topgames >.topgamescards{
-    /* background-color: #f7f7f7; */
-    /* background-color: cornflowerblue; */
+.topgames >.topgamescards {
     width: 100%;
-    height: 60%;
+    height: 70vh;
     display: grid;
     grid-template-columns: repeat(6,200px);
-    grid-template-rows: repeat(1,150px);
+    grid-template-rows: repeat(1,280px);
     justify-content: space-evenly;
     align-content: center;
-
-    /* background-color: coral; */
+    /* padding:0px 100px; */
 }
 .topgames >.topgamescards >.games-card{
-    width:100%;
-    height: 100%;
-    /* border: 4px solid yellowgreen; */
-    background-color: white;
-    text-align: center;
+    /* border: 2px solid; */
     border-radius: 25px;
+    background-color: white;
     position: relative;
+   
+}
+.topgames >.topgamescards >.games-card >.gamestxt{
+    /* border: 2px solid red; */
+    width:100%;
+    height: 25%;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+}
+.topgames >.topgamescards >.games-card:hover .gamestxt{
+    color: #008af8;
 }
 .topgames >.topgamescards >.games-card img{
-    width: 100%;
+    width:100%;
     height: 60%;
     border-radius: 25px;
 }
-.topgames >.topgamescards >.games-card >.gamestxt{
-    padding: 15px;
-}
-.topgames >.topgamescards >.games-card >.gamesbutton{
-    padding: 10px 25px ;
-    border-radius: 25px;
-    color: white;
-    border: none;
+.topgames >.topgamescards >.games-card > .gamesbutton{
     background-color: #ee626b;
+    padding:10px 20px;
+    border-radius: 25px;
+    border: none;
+    color: white;
     position: absolute;
-    bottom:-5%;
-    left: 22%;
+    top: 92%;
+    left: 25%;
 }
+.topgames >.topgamescards >.games-card:hover >.gamesbutton{
+    background-color: #008af8;
+}
+
+
 .topgames >.topgamescards >.games-card:hover >.gamesbutton {
     background-color: #008af8;
 }
@@ -437,9 +445,9 @@ margin-bottom: 20px;
 
 .actions >.actioncards >.actioncard >.acard img{
     width:100%;
-    height: 70%;
+    height: 80%;
     border-radius: 25px;
-  
+    /* padding: 0px 0px 0px 0px; */
 }
 .actions >.actioncards >.actioncard >.acard h1{
     padding: 12px;
@@ -452,7 +460,7 @@ margin-bottom: 20px;
 /* actions */
 /* news letter */
 .newsletter{
-    border: 4px solid ;
+    /* border: 4px solid ; */
     width:100%;
     height:120vh;
     /* margin: 50px 0px; */
@@ -469,7 +477,7 @@ margin-bottom: 20px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-    height: 80vh;
+    height: 70vh;
     width: 80vh;
     border-radius: 50px;
     position: absolute;
@@ -488,16 +496,52 @@ margin-bottom: 20px;
 }
 .newsletter .lettercards .leftcard{
     background-color:rgb(247, 247, 247);
-    height: 100%;
+    height: 80%;
     width: 35%;
     border-radius: 50px;
+    padding: 50px;
+    line-height: 70px;
 }
+.newsletter .lettercards .leftcard >.leftbutton{
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #ee626b;
+    color: white;
+    border: none;
+}
+
 .newsletter .lettercards .rightcard{
     background-color:rgb(247, 247, 247);
     height: 70%;
     width: 35%;
     border-radius: 50px;
+    text-align: center;
+    padding: 70px;
+    line-height: 70px;
 }
+.newsletter > .lettercards .rightcard .searchbar2{
+    background-color: white;
+    border-radius: 25px;
+    width:330px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.newsletter > .lettercards .rightcard .searchbar2 input{
+    margin: 10px;
+    width:200px;
+    outline: none;
+    border: none;
+}
+.newsletter > .lettercards .rightcard .searchbar2 button{
+    width:100px;
+    height: 50px;
+    background-color: #ee626b;
+    border-radius: 25px;
+    color: white;
+    border: none;
+}
+
 /* newsletter */
 /* footer */
 footer{
